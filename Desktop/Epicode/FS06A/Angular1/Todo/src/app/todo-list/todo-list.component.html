@@ -1,0 +1,15 @@
+<h1>Completati</h1>
+<ul>
+  <!-- <li *ngFor="let todo of arrayCompletati"> -->
+  <li *ngFor="let todo of getTodo(true)">
+    {{todo.id}} - {{todo.title}}
+  </li>
+</ul>
+
+<h1>NON Completati</h1>
+<ul>
+  <!-- <li *ngFor="let todo of arrayCompletati"> -->
+  <li *ngFor="let todo of getTodo(false)">
+    {{todo.id}} - {{todo.title}}
+  </li>
+</ul>
